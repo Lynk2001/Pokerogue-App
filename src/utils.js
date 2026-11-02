@@ -221,10 +221,10 @@ function resetGame() {
     globals.mainWindow.loadFile(path.join(globals.gameDir, 'index.html'));
   }
   else if (globals.isBeta) {
-		 globals.mainWindow.loadURL('https://beta.pokerogue.net/');
+		 globals.mainWindow.loadURL(globals.gameUrl);
   }
   else {
-    globals.mainWindow.loadURL('https://pokerogue.net/');
+    globals.mainWindow.loadURL(globals.gameUrl);
   }
 
   globals.mainWindow.webContents.on('did-finish-load', () => {

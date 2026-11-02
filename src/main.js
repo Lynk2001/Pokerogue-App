@@ -96,10 +96,10 @@ async function createWindow() {
     void globals.mainWindow.loadFile(path.join(globals.gameDir, 'index.html'));
   }
   else if (globals.isBeta) {
-		 void globals.mainWindow.loadURL('https://beta.pokerogue.net/');
+		 void globals.mainWindow.loadURL(globals.gameUrl);
   }
   else {
-    void globals.mainWindow.loadURL('https://pokerogue.net/');
+    void globals.mainWindow.loadURL(globals.gameUrl);
   }
 
   // Fix the resolution

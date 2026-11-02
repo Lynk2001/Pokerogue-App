@@ -10,6 +10,8 @@ let smogonWindow;
 let searchDexWindow;
 let isOfflineMode = false;
 let isBeta = false;
+// Multiplayer / co-op site the main window loads
+let gameUrl = 'https://spider12223.github.io/pokerogue-coop/';
 let gameFilesDownloaded = false;
 let closeUtilityWindows = false;
 let darkMode = false;
@@ -40,6 +42,7 @@ module.exports.smogonWindow = smogonWindow;
 module.exports.searchDexWindow = searchDexWindow;
 module.exports.isOfflineMode = isOfflineMode;
 module.exports.isBeta = isBeta;
+module.exports.gameUrl = gameUrl;
 module.exports.gameFilesDownloaded = gameFilesDownloaded;
 module.exports.closeUtilityWindows = closeUtilityWindows;
 module.exports.darkMode = darkMode;
